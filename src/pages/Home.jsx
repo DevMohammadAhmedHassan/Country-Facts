@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/footer";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -27,9 +28,20 @@ const Home = () => {
                 vice offal plaid everyday carry. Gluten-free chia VHS squid
                 listicle artisan.
               </p>
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg cursor-pointer">
+              <Link className="inline-flex items-center text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg cursor-pointer" to="/country">
                 Get Started
-              </button>
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </Link>
             </div>
           </div>
         </section>

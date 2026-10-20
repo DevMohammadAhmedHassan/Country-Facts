@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Nav = () => {
   return (
@@ -20,8 +21,9 @@ const Nav = () => {
           <span className="ml-3 text-xl r">Country Facts</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center cursor-pointer">
-          <a href="/" className="mr-5 hover:text-gray-900">Home</a>
-          <a className="mr-5 hover:text-gray-900">Contact</a>
+          <Link className="mr-5 hover:text-gray-900" to="/">
+            Home
+          </Link>
           <a
             href="https://github.com/DevMohammadAhmedHassan/Country-Facts"
             target="_blank"
@@ -29,8 +31,11 @@ const Nav = () => {
           >
             Github
           </a>
+          <Link className="mr-5 hover:text-gray-900" to="/contact">
+            Contact
+          </Link>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer">
+        <Link className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 cursor-pointer" to="/country">
           Get Started
           <svg
             fill="none"
@@ -43,7 +48,7 @@ const Nav = () => {
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </button>
+        </Link>
       </div>
     </header>
   );
