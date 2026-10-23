@@ -1,7 +1,7 @@
 import React from "react";
 
 const CountryAPI = () => {
-  asreturn (
+  return (
     <div className="bg-amber-400 p-5 text-center flex flex-col items-center">
       <img
         className="w-90 border-2 h-60 object-cover mb-5"
