@@ -9,7 +9,7 @@ const Country = () => {
     <>
       <Nav />
 
-      <div className="flex flex-col justify-center items-center h-[76vh] gap-10">
+      <div className="flex flex-col justify-center items-center h-[76vh] gap-5">
         <SearchBar />
         <CountryAPI />
       </div>
