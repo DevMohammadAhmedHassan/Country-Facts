@@ -1,8 +1,9 @@
 import "./App.css";
 import { Routes , Route } from "react-router";
 import Home from "./pages/Home";
-import Country from "./pages/country";
+import Country from "./pages/Country";
 import Contact from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       <Route path="/" element={<Home />}/>
       <Route path="/contact" element={<Contact />}/>
       <Route path="/country" element={<Country />}/>
-      <Route path="/" element={<Home />}/>
-      <Route path="/" element={<Home />}/>
+      
+      <Route path="*" element={<PageNotFound/>}/>
     </Routes>
   );
 }
