@@ -1,33 +1,44 @@
 import React from "react";
 
-const CountryAPI = () => {
-  asreturn (
-    <div className="bg-amber-400 p-5 text-center flex flex-col items-center">
+const CountryAPI = (props) => {
+
+  // conditional rendering
+  if (props.country === null) {
+    return null;
+  }
+
+  return (
+    <div className="bg-[#3835db52] p-5 text-center flex flex-col items-center rounded-md shadow-lg shadow-[#3835db52]">
       <img
         className="w-90 border-2 h-60 object-cover mb-5"
-        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/3840px-Flag_of_Pakistan.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+        src={props.country.flags.png}
         alt="Flag"
       />
-      <div>
-        <h1 className="text-4xl font-bold">Name</h1>
+      <div className="flex flex-col items-center">
+        <h1 className="text-4xl font-bold w-90 text-center mb-5">
+          {props.country.name}
+        </h1>
         <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
           <span>Capital</span>
-          <span>Capital</span>
+          <span>{props.country.capital}</span>
         </p>
 
         <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
           <span>Currency</span>
-          <span>Currency</span>
+          <span>
+            {props.country.currencies[0].name} (
+            {props.country.currencies[0].code})
+          </span>
         </p>
 
         <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
           <span>Region</span>
-          <span>Region</span>
+          <span>{props.country.region}</span>
         </p>
 
         <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
           <span>Language</span>
-          <span>Language</span>
+          <span>{props.country.languages[0].name}</span>
         </p>
       </div>
     </div>
