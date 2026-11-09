@@ -8,7 +8,7 @@ const CountryAPI = (props) => {
   }
 
   return (
-    <div className="bg-[#3835db52] p-5 text-center flex flex-col items-center rounded-md shadow-lg shadow-[#3835db52]">
+    <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 text-center flex flex-col items-center rounded-md shadow-xl shadow-indigo-500/20">
       <img
         className="w-90 h-60 object-contain mb-5"
         src={props.country.flags.png}
@@ -18,12 +18,12 @@ const CountryAPI = (props) => {
         <h1 className="text-4xl font-bold w-90 text-center mb-5">
           {props.country.name}
         </h1>
-        <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
+        <p className="text-lg flex w-100 justify-between border-b-2 border-indigo-500 pb-1 mb-1">
           <span>Capital</span>
           <span>{props.country.capital}</span>
         </p>
 
-        <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
+        <p className="text-lg flex w-100 justify-between border-b-2 border-indigo-500 pb-1 mb-1">
           <span>Currency</span>
           <span>
             {props.country.currencies[0].name} (
@@ -31,12 +31,12 @@ const CountryAPI = (props) => {
           </span>
         </p>
 
-        <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
+        <p className="text-lg flex w-100 justify-between border-b-2 border-indigo-500 pb-1 mb-1">
           <span>Region</span>
           <span>{props.country.region}</span>
         </p>
 
-        <p className="text-lg flex w-100 justify-between border-b-2 border-red-500 pb-1 mb-1">
+        <p className="text-lg flex w-100 justify-between border-b-2 border-indigo-500 pb-1 mb-1">
           <span>Language</span>
           <span>{props.country.languages[0].name}</span>
         </p>

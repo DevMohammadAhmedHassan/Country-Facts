@@ -19,7 +19,7 @@ const Footer = () => {
           </svg>
           <span class="ml-3 text-xl">Country Facts</span>
         </a>
-        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-400 sm:py-2 sm:mt-0 mt-4">
           © 2026 Country Facts —
           <a
             href="https://www.linkedin.com/in/mohammad-ahmed-hassan-b04a0a291/"
