@@ -10,7 +10,7 @@ const CountryAPI = (props) => {
   return (
     <div className="bg-[#3835db52] p-5 text-center flex flex-col items-center rounded-md shadow-lg shadow-[#3835db52]">
       <img
-        className="w-90 border-2 h-60 object-cover mb-5"
+        className="w-90 h-60 object-contain mb-5"
         src={props.country.flags.png}
         alt="Flag"
       />

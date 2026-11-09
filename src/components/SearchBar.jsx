@@ -15,8 +15,10 @@ const SearchBar = (props) => {
       setInput("");
       return;
     }
+
     props.fetchCountry(input);
     console.log(input + " sent");
+    
     setInput("");
   };
   return (

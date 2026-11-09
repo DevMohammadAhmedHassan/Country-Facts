@@ -8,12 +8,21 @@ import { useState } from 'react';
 const Country = () => {
   const [country, setCountry] = useState(null);
 
+  // Using API
+  // Endpoint(link): https://countries.dev/name/{country_name}
   const fetchCountry = async (name) => {
-    const response = await fetch("https://countries.dev/name/" + name);
-    const data = await response.json();
-    console.log(data);
+    try{
+      const response = await fetch("https://countries.dev/name/" + name);
+      const data = await response.json();
+      console.log(data);
 
-    setCountry(data[0]);
+      setCountry(data[0]);
+    }
+    catch(err){
+      console.log("Error:( " + err.message);
+      alert("Country not found");
+    }
+    
 
   }
 

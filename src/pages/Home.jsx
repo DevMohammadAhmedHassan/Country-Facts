@@ -12,7 +12,7 @@ const Home = () => {
       {/* Hero Section */}
       <main>
         <section className="text-gray-600 body-font">
-          <div className="container mx-auto flex flex-col px-5 py-15 justify-center items-center">
+          <div className="container mx-auto flex flex-col px-5 py-5 justify-center items-center">
             <img
               className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
               alt="hero"

@@ -30,8 +30,15 @@ const Footer = () => {
             @DevMohammadAhmedHassan
           </a>
         </p>
+
+        {/* icons */}
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="text-gray-500">
+          {/* facebook */}
+          <a
+            class="text-gray-500"
+            href="https://www.facebook.com/mohammad.ahmed.hassan.411731/"
+            target="blank"
+          >
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -43,19 +50,29 @@ const Footer = () => {
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+
+          {/* github */}
+          <a
+            class="ml-3 text-gray-500"
+            href="https://github.com/DevMohammadAhmedHassan"
+            target="blank"
+          >
             <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
               viewBox="0 0 24 24"
+              className="w-5 h-5"
+              fill="currentColor"
+              aria-hidden="true"
             >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.05c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.53.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12.01 12.01 0 0 0 24 12C24 5.37 18.63 0 12 0z" />
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+
+          {/* instagram */}
+          <a
+            class="ml-3 text-gray-500"
+            href="https://www.instagram.com/temporaryhassan?igsh=d2tjNHh5a3Z5eXVr"
+            target="blank"
+          >
             <svg
               fill="none"
               stroke="currentColor"
@@ -69,7 +86,13 @@ const Footer = () => {
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+
+          {/* linkedin */}
+          <a
+            class="ml-3 text-gray-500"
+            href="https://www.linkedin.com/in/mohammad-ahmed-hassan-b04a0a291/"
+            target="blank"
+          >
             <svg
               fill="currentColor"
               stroke="currentColor"
